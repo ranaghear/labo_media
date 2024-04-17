@@ -1,0 +1,204 @@
+
+.oxanium-<uniquifier> {
+	font-family: "Oxanium", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+}
+body{
+	background-image: url('../images/background.jpeg');
+	background-attachment: fixed;
+	background-size: cover;
+	max-width: 100%;
+}
+
+.header{
+	background-color:rgb(70,70,70,0.7);
+	background-size: cover;
+	width:100%;
+	max-width: 100%;
+	height:130px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	position: fixed;
+	z-index: 100;
+
+	border-radius: 0px 0px 30px 30px;
+}
+
+.search{
+	display: flex;
+	align-items: baseline;
+}
+@media screen and (max-width:800px){
+	.logo img{
+		width:200px;
+	}
+	.header{
+
+	}
+}
+.searchbar{
+
+	font-family: "Oxanium", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	padding: 2px 0px 0px 10px;
+	border:0;
+	height: 23px;
+	border-radius: 30px 0px 0px 30px;
+	opacity: 1;
+}
+.searchbarButton{
+	background-color: white;
+	border:0;
+	height: 25px;
+	border-radius: 0px 30px 30px 0px;
+}
+
+.searchFor{
+	font-family: "Oxanium", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	margin:150px auto;
+	position: absolute;
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-size: 2rem;
+}
+.affiche{
+		display: inline-flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap:wrap;
+		width:100%;
+		margin: 150px 0 0 0;
+}
+.affiche img{
+	display: block;
+	height:380px;
+	width: 250px;
+	transition: .5s ease;
+}
+.image{
+	position: relative;
+	height:380px;
+	width: 250px;
+	margin:100px 75px;
+}
+
+.film{
+	color:white;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 380px;
+	width: 250px;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: black;
+}
+
+.image:hover .overlay {
+	-webkit-transform:scale(1.25,1.25);
+	opacity: 0.8;
+}
+.image:hover img{
+	-webkit-box-shadow: 0px 0px 10px 10px #940092;
+	-webkit-transform:scale(1.25,1.25);
+	transition: .5s ease;
+}
+
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+text-align: center;
+width: 250px;
+height: 380px;
+}
+
+.titreOverlay{
+	font-family: "Oxanium", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 2rem;
+	padding:0px;
+	margin:5px 0px 0px 0px;
+	max-width: 100%;
+}
+.infoOverlay{
+	margin:20px 0px 0px 0px;
+	padding:10px;
+	text-align: left;
+	font-family: "Oxanium", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+}
+.infoOverlayGenre{
+	display: flex;
+	flex-direction: column;
+}
+.clickInfo{
+	font-family: "Oxanium", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1rem;
+	color: white;
+	text-align: center;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+}
+.buttonNav{
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	position:fixed;
+	top:50%;
+	align-items: center;
+}
+.buttonPrec{
+	margin:0px 0px 0px 20px;
+	opacity: 0.9;
+	transition: .5s ease;
+	width:20px;
+}
+.buttonNext{
+	margin:0px 20px 0px 0px;
+	opacity: 0.8;
+	transition: .5s ease;
+}
+
+.buttonNext:hover {
+	-webkit-transform:scale(1.25,1.25);
+	opacity: 1;
+}
+.buttonPrec:hover {
+	-webkit-transform:scale(1.25,1.25);
+	opacity: 1;
+}
+.pagination{
+	display: flex;
+	justify-content: space-around;
+	width: 25%;
+	margin: 0px auto 20px;
+}
